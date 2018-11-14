@@ -12,7 +12,7 @@ class Header extends React.Component {
     return (
       <View style={{
         alignItems: 'center',
-        paddingTop: 21,
+        paddingTop: 20,
       }}>
         <Text style={{
         fontWeight: 'bold',
