@@ -8,25 +8,18 @@ import {
   ScrollView, 
   TouchableOpacity,
 } from 'react-native'
+import Header from './src/components/Header'
 
 import Expo from 'expo'
 
 // containers
 import RootContainer from './src/containers/RootContainer'
 import { grey, bold } from 'ansi-colors';
+
 const doSomething = () => {
   alert("(Im)pressed")
 }
 
-class Header extends React.Component {
-  render() {
-    return (
-      <View style={styles.header}>
-        <Text style={{fontWeight: 'bold'}}>Nadpis: {this.props.title}</Text>
-      </View>
-    );
-  }
-}
 // class button extends React.Component {
 // render() {
 //   return (
@@ -36,6 +29,7 @@ class Header extends React.Component {
 //   );
 //   }
 // }
+
 class Pic extends React.Component {
   render() {
     return (
@@ -47,7 +41,6 @@ class Pic extends React.Component {
 }
 
 export default class App extends React.Component {
-
   render() {
     return <View>
     <Header title='Tohle je nadpis' />
